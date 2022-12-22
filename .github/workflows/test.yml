@@ -19,3 +19,4 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/v')
     - run: echo ${{ env.IMAGE_TAG }}
     - run: echo ${{ github.ref_name }}
+    - run: echo ${{ github.ref }}
