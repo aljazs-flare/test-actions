@@ -31,4 +31,4 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - run: |
-        ghcr.io/${{ github.repository }}:${{ env.IMAGE_TAG }}
+        echo ghcr.io/${GITHUB_REPOSITORY@L}:${{ env.IMAGE_TAG }}
